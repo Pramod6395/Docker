@@ -215,3 +215,14 @@ From your computer, open a browser and navigate to http://localhost:8000 you wil
 sudo docker run -p 8000:8000 -v [host pwd]:[container dir] hello:latest
 
 ```
+#### Save the image in tar file:
+```bash
+sudo docker save [image name ] > imagename.tar
+
+```
+
+#### Load the saved image:
+```bash
+sudo docker load < imagename.tar
+
+```
