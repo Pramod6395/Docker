@@ -209,3 +209,9 @@ sudo docker run -p 8000:8000 hello:latest
 
 ```
 From your computer, open a browser and navigate to http://localhost:8000 you will see app is working.
+
+#### Use Volumes so you can change code file from outside directory:
+```bash
+sudo docker run -p 8000:8000 -v [host pwd]:[container dir] hello:latest
+
+```
