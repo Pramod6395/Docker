@@ -219,6 +219,10 @@ sudo docker run -p 8000:8000 -v [host pwd]:[container dir] hello:latest
 ```bash
 sudo docker save [image name ] > imagename.tar
 
+OR
+
+sudo docker save [image name] | gzip > imnagename.tar.gz
+
 ```
 
 #### Load the saved image:
