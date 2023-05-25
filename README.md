@@ -230,3 +230,12 @@ sudo docker save [image name] | gzip > imnagename.tar.gz
 sudo docker load < imagename.tar
 
 ```
+#### How to push docker image to DockerHub:
+
+```bash
+docker login -u pramopatil95
+docker tag myjenkins-blueocean:2.332.3-1 pramopatil95/test:V1
+docker push pramopatil95/test:V1
+docker logout
+
+```
