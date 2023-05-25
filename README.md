@@ -239,3 +239,21 @@ docker push pramopatil95/test:V1
 docker logout
 
 ```
+
+
+```bash
+ 1.login to docker
+ 
+ sudo docker login -u pramopatil95
+ 
+ 2. Reaname the exiting image with username at start:
+ 
+ sudo tag {[imageName]}:[tag] {[username]/[imageName]}:[tag] 
+ 
+ Old image name = {[imageName]}
+ New image name = {[username]/[imageName]}
+ 
+ 3. Push the image to repository. 
+ 
+ sudo docker push {[username]/[imageName]}:[tag]
+```
